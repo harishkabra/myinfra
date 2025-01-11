@@ -16,7 +16,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "hk-terraform-state-bucket01"
-    key    = "myinfra/myec2-ubuntu/terraform.tfstate"
+    key    = "myinfra/my-ec2/terraform.tfstate"
     region = "us-east-1"
   }
 }

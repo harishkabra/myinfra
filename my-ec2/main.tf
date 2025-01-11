@@ -8,6 +8,12 @@ resource "aws_instance" "web" {
     Name = "HK-Linux"
   }
   key_name = "hk-aws1-admin"
+
+  # provisioner "local-exec" {
+  #   command = "echo ${aws_instance.web.public_ip} > C:/Users/haris/.aws/pub_ip.txt"
+  # }
+
+  #user_data = file("webserver.sh")
 }
 
 
